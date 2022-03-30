@@ -1,0 +1,23 @@
+.banner {
+  background-color: #f8c5ce98;
+  padding: 1rem;
+  margin: 1rem;
+}
+.poster {
+  height: 250px;
+  width: 250px;
+}
+.description{
+    margin-top: .5rem;
+}
+.banner button {
+  border: none;
+  background-color: #f3617a;
+  margin-top: 0.5rem;
+  height: 2.8rem;
+  width: 6rem;
+}
+
+.banner .price{
+    margin-top: .5rem;
+}

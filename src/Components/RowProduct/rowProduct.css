@@ -1,0 +1,33 @@
+.heading{
+    margin-left: 1rem;
+}
+.products{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.products::-webkit-scrollbar{
+    display: none;
+}
+.product{
+    background-color: antiquewhite;
+    color: black;
+    margin-right: 1rem;
+    min-width: 25rem;
+}
+.product .poster{
+    margin: 1rem;
+    margin-left: 25%;
+    height:200px;
+    width: 170px;
+}
+.product-text{
+    margin: 1rem;
+}
+button {
+    border: none;
+    background-color: #f3617a;
+    margin-top: 0.5rem;
+    height: 2.8rem;
+    width: 6rem;
+  }

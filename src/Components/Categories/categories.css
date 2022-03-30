@@ -1,0 +1,23 @@
+.categories{
+    display: flex;
+    justify-content: space-around;
+}
+.categories-products{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.categories-products::-webkit-scrollbar{
+    display: none;
+}
+.categories-product{
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+    width: 26rem;
+    padding: 1rem;
+}
+.categories-product .poster{
+    height:50px;
+    width: 50px;
+}
