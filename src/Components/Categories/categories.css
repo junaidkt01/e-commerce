@@ -1,11 +1,13 @@
 .categories{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 .categories-products{
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-left: 2%;
 }
 .categories-products::-webkit-scrollbar{
     display: none;

@@ -1,19 +1,18 @@
-import './App.css';
-import Banner from './Components/Banner/Banner';
-import Categories from './Components/Categories/Categories';
-import Footer from './Components/Footer/Footer';
-import NavBar from "./Components/NavBar/NavBar"
-import RowProduct from './Components/RowProduct/RowProduct';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./Components/NavBar/NavBar";
+import Home from "./pages/Home";
+import Product from "./Components/Product/Product";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Banner/>
-      <Categories/>
-      <RowProduct name="Shoes"/>
-      <RowProduct name="Backpack"/>
-      <Footer/>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/products/:id" element={<Product />} />
+      </Routes>
     </div>
   );
 }

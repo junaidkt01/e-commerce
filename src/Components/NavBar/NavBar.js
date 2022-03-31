@@ -1,6 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import {useSelector} from "react-redux"
 
 const NavBar = () => {
+  const state = useSelector((state)=>state.handleCart)
   return (
     <div>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,21 +15,23 @@ const NavBar = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shoes</a>
+          <a class="nav-link" href="/shoes">Shoes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Backpack</a>
+          <a class="nav-link" href="/backpack">Backpack</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <div className="buttons">
+        <NavLink to="/cart">
+        <a className="btn">Cart ({state.length})</a>
+        </NavLink>
+        </div>
     </div>
   </div>
 </nav>

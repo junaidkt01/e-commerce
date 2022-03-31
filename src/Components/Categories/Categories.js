@@ -6,7 +6,9 @@ const Categories = () => {
     <div className="categories">
       <div className="categories-products">
         <div className="categories-product">
-          <h3><strong>Watch</strong></h3>
+          <h3>
+            <strong>Watch</strong>
+          </h3>
           <img
             className="poster"
             alt="poster"
@@ -16,7 +18,9 @@ const Categories = () => {
       </div>
       <div className="categories-products">
         <div className="categories-product">
-          <h3><strong>Watch</strong></h3>
+          <h3>
+            <strong>Watch</strong>
+          </h3>
           <img
             className="poster"
             alt="poster"
@@ -26,12 +30,14 @@ const Categories = () => {
       </div>
       <div className="categories-products">
         <div className="categories-product">
-          <h3><strong>Watch</strong></h3>
+          <h3>
+            <strong>Shoes</strong>
+          </h3>
           <img
             className="poster"
             alt="poster"
-            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&w=1000&q=80"
-          />
+src="https://cpng.pikpng.com/pngl/s/186-1861125_free-png-download-nike-zoom-winflo-3-831561.png"
+/>
         </div>
       </div>
     </div>

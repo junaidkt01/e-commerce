@@ -1,10 +1,14 @@
+.rowProduct{
+    margin-bottom: 2rem
+}
 .heading{
-    margin-left: 1rem;
+    margin-left: 2%;
 }
 .products{
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-left: 2%;
 }
 .products::-webkit-scrollbar{
     display: none;
@@ -13,16 +17,15 @@
     background-color: antiquewhite;
     color: black;
     margin-right: 1rem;
-    min-width: 25rem;
+    padding: 1rem;
 }
 .product .poster{
-    margin: 1rem;
-    margin-left: 25%;
-    height:200px;
-    width: 170px;
+    padding: 1rem;
+    height: 200px;
+    width: 200px;
 }
 .product-text{
-    margin: 1rem;
+    width: 17rem;
 }
 button {
     border: none;
